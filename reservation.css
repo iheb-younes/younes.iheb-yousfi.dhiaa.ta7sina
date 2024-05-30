@@ -1,0 +1,172 @@
+/* Martin Barber CSS */
+
+body {
+    background-color: #1c1c1a;
+    color: #fff;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.btn-reservation {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservation:hover {
+    background-color: yellow;
+}
+
+/* Responsive menu button styling */
+.responsive-menu {
+    display: none;
+    background-image: url('path/to/menu-icon.png'); /* Remplacez par le chemin de votre icône de menu */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+/* Styles for the reservation form */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+label {
+    color: yellow;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd700;
+}

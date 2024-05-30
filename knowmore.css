@@ -1,0 +1,212 @@
+body {
+    background-color: #1c1c1a;
+    color: #fff;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.btn-reservation {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservation:hover {
+    background-color: yellow;
+}
+
+/* Responsive menu button styling */
+.responsive-menu {
+    display: none;
+    background-image: url('path/to/menu-icon.png'); /* Remplacez par le chemin de votre icône de menu */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+.div-style {
+    /* Ajoutez vos styles personnalisés ici */
+    background-color: #2c2c2a;
+    color: white;
+    padding: 20px;
+    margin: 10px auto; /* Ajoute une marge en haut et en bas, et centre la div horizontalement */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    max-width: 900px; /* ou toute autre largeur souhaitée */
+}
+
+.div-style h2 {
+    /* Styles pour les titres à l'intérieur des divs */
+    color: yellow;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center; /* Pour centrer le texte */
+    position: relative; /* Pour positionner la ligne */
+    color: yellow;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%; /* Ajustez la largeur de la ligne selon vos préférences */
+    height: 1px; /* Ajustez l'épaisseur de la ligne selon vos préférences */
+    background-color: white; /* Couleur de la ligne */
+}
+
+.title::before {
+    left: 0;
+    transform: translateX(-16%);
+}
+
+.title::after {
+    right: 0;
+    transform: translateX(16%);
+}
+
+
+
+/*contact */ 
+#contact{
+    padding: 20px 5px;
+    width: 100%;
+}
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container .form_img{
+    width: 50%;
+    height: 500px;
+}
+.container .form_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    padding: 10px 0;
+}
+input , textarea{
+    background-color: transparent;
+    border: 1px solid yellow;
+    padding: 10px 5px;
+    color: #fff;
+    outline: 0;
+    resize: none;
+}
+form button{
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #000;
+    background-color: yellow;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}

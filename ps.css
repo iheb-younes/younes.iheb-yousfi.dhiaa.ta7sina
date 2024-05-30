@@ -1,0 +1,149 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .main {
+    padding: 2rem;
+  }
+  
+  .section--lg {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  .table thead {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table td a.remove {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .alert {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .cart_actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .cart_actions .btn {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .form_group {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .input-group .btn {
+    flex: none;
+  }
+  
+  .qtyInput {
+    text-align: center;
+    width: 50px;
+  }
+  
+  #total {
+    font-weight: bold;
+  }
+  
+  #img:hover {
+    transition: 0.6s;
+    transform: scale(1.8);
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .btn-dark {
+    background-color: #343a40;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-sm {
+    font-size: 0.875rem;
+  }
+  
+  .btn-md {
+    font-size: 1rem;
+  }

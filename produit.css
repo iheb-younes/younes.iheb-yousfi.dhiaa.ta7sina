@@ -1,0 +1,327 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+.btn-reservation {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reservation:hover {
+  background-color: yellow;
+}
+
+/* Responsive menu button styling */
+.responsive-menu {
+  display: none;
+  background-image: url('path/to/menu-icon.png'); /* Remplacez par le chemin de votre icône de menu */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #1a1a1a;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .menu li {
+      margin-bottom: 10px;
+  }
+
+  .menu a {
+      font-size: 18px;
+  }
+
+  .responsive-menu {
+      display: block;
+  }
+
+  .menu.show {
+      display: flex;
+  }
+}
+
+/* Main container styling */
+.main {
+  padding: 20px;
+}
+
+/* Section styling */
+.section--lg {
+  padding: 50px 0;
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Product item styling */
+.product_item {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product_item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.product_banner {
+  position: relative;
+}
+
+.product_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px; /* Set a fixed height for consistency */
+  overflow: hidden;
+}
+
+.product_img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 0.3s ease;
+  object-fit: cover; /* Ensure the image covers the container proportionally */
+}
+
+.product_img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product_images:hover .product_img.hover {
+  opacity: 1;
+}
+
+.product_content {
+  padding: 20px;
+  text-align: center;
+}
+
+.product_title {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.product_title:hover {
+  color: yellow;
+}
+
+.product_rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.product_rating i {
+  color: #ffdd00;
+  margin-right: 5px;
+}
+
+.product_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.new_price {
+  font-size: 20px;
+  color: #ff5252;
+}
+
+.action_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:yellow;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.action_btn:hover {
+  background-color: yellow;
+}
+
+.cart_btn img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* Additional styling for overall look */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.title {
+  text-align: center; /* Pour centrer le texte */
+  position: relative; /* Pour positionner la ligne */
+  color: yellow;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%; /* Ajustez la largeur de la ligne selon vos préférences */
+  height: 1px; /* Ajustez l'épaisseur de la ligne selon vos préférences */
+  background-color: white; /* Couleur de la ligne */
+}
+
+.title::before {
+  left: 0;
+  transform: translateX(-2%);
+}
+
+.title::after {
+  right: 0;
+  transform: translateX(2%);
+}
+
+input[type="number"],
+input[type="text"]{
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="submit"]{
+  padding: 10px 20px;
+  background-color: yellow;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}

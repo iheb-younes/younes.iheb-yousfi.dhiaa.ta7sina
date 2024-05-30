@@ -1,0 +1,185 @@
+/* Martin Barber CSS */
+
+body {
+    background-color: #1c1c1a;
+    color: #fff;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.btn-reservation {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservation:hover {
+    background-color: yellow;
+}
+
+/* Responsive menu button styling */
+.responsive-menu {
+    display: none;
+    background-image: url('path/to/menu-icon.png'); /* Remplacez par le chemin de votre icône de menu */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+/* Admin Login CSS */
+
+body {
+    background-color: #1c1c1a;
+    color: #fff;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+.containerReservation {
+    margin: 100px auto;
+    width: 95%;
+    background-color: #1a1a1a; /* Changed background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Adjusted box-shadow */
+}
+
+.container {
+    margin: 100px auto;
+    width: 300px;
+    background-color: #1a1a1a; /* Changed background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); /* Adjusted box-shadow */
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellow; /* Changed heading color */
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f5f5f5; /* Changed label color */
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container button[type="submit"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Changed input background color */
+    color: #fff; /* Changed input text color */
+    text-align: center; /* Centered text */
+}
+
+.container button[type="submit"] {
+    background-color: yellow; /* Changed button background color */
+    color: black; /* Changed button text color */
+    border: none;
+    cursor: pointer;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #f0e68c; /* Lightened button color on hover */
+}
